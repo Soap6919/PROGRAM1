@@ -90,19 +90,7 @@ fn masrchar(&self) {
     false
         
     }
-
-    /*fn novocal(&self)->String {
-        let mut aux: String = String::new();
-        for j in 0..self.longitud {
-            let mut c:char = self.caracteres[j];
-            if self.vervocal(c) == false {
-                aux.push( self.caracteres[j]);
-            }
-        }
-        aux
-    }*/
-   //cuenta caracter y vocales p
-
+    
     fn cont_voc_cons(&self) {
         let mut co =0; 
         let mut vo =0;
