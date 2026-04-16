@@ -70,7 +70,7 @@ fn masrchar(&self) {
     println!("El caracter '{}' se repite {} veces", cara, conm);
 }
 
-    // limpia la cadena para poder ingresar una nuev
+//------------------------------------------------------------------------------------------------------
     fn vervocal(&self, c: char)->bool {
         if (c=='a'|| c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U') {
             true
@@ -91,7 +91,7 @@ fn masrchar(&self) {
         
     }
 
-    fn novocal(&self)->String {
+    /*fn novocal(&self)->String {
         let mut aux: String = String::new();
         for j in 0..self.longitud {
             let mut c:char = self.caracteres[j];
@@ -100,7 +100,7 @@ fn masrchar(&self) {
             }
         }
         aux
-    }
+    }*/
    //cuenta caracter y vocales p
 
     fn cont_voc_cons(&self) {
@@ -132,8 +132,7 @@ fn masrchar(&self) {
             self.caracteres[posi -1] = nuevochar;
         }
     }
-
-    //-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
     fn limpiar(&mut self) {
         self.longitud = 0;
         self.caracteres = ['\0'; N];
